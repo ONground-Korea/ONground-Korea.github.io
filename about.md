@@ -5,7 +5,12 @@ permalink: /about/
 main_nav: true
 ---
 
-![alt text]({{ site.baseurl }}/assets/profile-placeholder.gif "Profile Picture"){:.profile}
+![alt text]({{ site.baseurl }}/assets/IMG_7006.jpg "Profile Picture"){:.profile}
+
+## 약력
+2017 - 2020 재현고등학교
+
+2021 -      고려대학교 컴퓨타학과
 
 Centrarium is a custom theme for Jekyll, made by [Ben Centra][bencentra] for his own blog. He'd be humbled if you liked it enough to use it as well! Installation and configuration instructions can be found in the [GitHub repository](https://github.com/bencentra/centrarium).
 
