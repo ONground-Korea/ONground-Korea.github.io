@@ -61,6 +61,14 @@ Lightbox has been enabled for images. To create the link that'll launch the ligh
   <img src="//bencentra.com/assets/images/falcon9_small.jpg" title="Check out the Falcon 9 from SpaceX">
 </a>
 
+<a href="//bencentra.com/assets/images/falcon9_large.jpg" data-lightbox="falcon">
+  <img src="//bencentra.com/assets/images/falcon9_large.jpg">
+</a>
+
+<img src="//bencentra.com/assets/images/falcon9_small.jpg">
+
+![Image Alt 텍스트](/assets/IMG_7006.jpg)
+
 For more information, check out the [Lightbox][lightbox] website.
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
