@@ -32,12 +32,12 @@ paginate: 5
 
 # Pagination Settings
 # https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
-pagination:
-  enabled: true
-  per_page: 5
-  permalink: "/page/:num/"
-  sort_reverse: true
-  collection: 'posts'
+#pagination:
+ # enabled: true
+ # per_page: 5
+ # permalink: "/page/:num/"
+ # sort_reverse: true
+ # collection: 'posts'
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
