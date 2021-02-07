@@ -7,10 +7,31 @@ main_nav: true
 
 ![alt text]({{ site.baseurl }}/assets/IMG_7006.jpg "Profile Picture"){:.profile}
 
+
+### <center>한 지 상</center>
+
+
+
+
+<br>
+
 ## 약력
 2017 - 2020 재현고등학교
 
-2021 -      고려대학교 컴퓨타학과
+2020 -      고려대학교 컴퓨터학과
+
+<br>
+
+## 활동
+- 2021.01 - 2021.03 <a href="#coala"> 코알라 프로젝트 </a>
+
+<br>
+
+## 프로젝트
+- <h4 id="coala">코알라 프로젝트</h4> 
+
+
+<br>
 
 Centrarium is a custom theme for Jekyll, made by [Ben Centra][bencentra] for his own blog. He'd be humbled if you liked it enough to use it as well! Installation and configuration instructions can be found in the [GitHub repository](https://github.com/bencentra/centrarium).
 
