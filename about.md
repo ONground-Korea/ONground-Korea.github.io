@@ -48,7 +48,9 @@ main_nav: true
 - REACT.js
 - Digital system design
 - Discrete Mathematics
-- 
+
+<br>
+
 ## 프로젝트
 - <h4 id="coala">코알라 프로젝트</h4> 
 
