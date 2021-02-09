@@ -27,8 +27,9 @@ logo: "/assets/logo.png"
 # Build settings
 markdown: kramdown
 kramdown:
-	input: GFM
-	syntax_hightlighter: rouge
+  input: GFM
+  syntax_highlighter: rouge
+highlighter: rouge
 inter_post_navigation: true
 highlightjs_theme: "monokai-sublime"
 paginate: 5
