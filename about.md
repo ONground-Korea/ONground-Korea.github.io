@@ -16,7 +16,7 @@ main_nav: true
 <br>
 
 ## 저는
-<span style="color:navy"> **인공지능**이 세상을 바꿀 수 있다고 믿는 초보 개발자입니다. </span>
+### <span style="color:navy"> **인공지능**이 세상을 바꿀 수 있다고 믿는 초보 개발자입니다. </span>
 
 - 사용하는 언어
     * C
