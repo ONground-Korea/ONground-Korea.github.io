@@ -2,7 +2,7 @@
 layout: post
 author: 한지상
 title: "Kaggle(캐글) - Digit Recognizer"
-date: 2021-03-07 01:20:00
+date: 2021-03-20 16:10:00
 categories: Machine_Learning
 tags: [ML, 머신러닝, sklearn, Python]
 cover: "/assets/캡처_2021_03_07_01_20_51.png"
