@@ -35,6 +35,8 @@ main_nav: true
 
 - 2020 - _____ 고려대학교 컴퓨터학과 
 
+- 2021 - The Coala 대표
+
 <br>
 
 ## 활동
@@ -44,10 +46,9 @@ main_nav: true
 
 ## 공부하는 것
 - Algorithm
-- Machine Learning
-- REACT.js
-- Digital system design
-- Discrete Mathematics
+- ML, DL
+- VQA
+- Computer Vision
 
 <br>
 
