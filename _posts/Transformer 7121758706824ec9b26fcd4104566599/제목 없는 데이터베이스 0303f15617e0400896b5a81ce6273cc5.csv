@@ -1,0 +1,8 @@
+﻿parameter,descrption
+Data set (Eng-Ger),"WMT 2014 English-German dataset(4.5M쌍의 문장, 37000 단어)"
+Data set (Eng-French),"WMT 2014 English-French dataset(36M쌍의 문장, 32000 단어)"
+Batch size,25000
+Hardware,8 NVIDIA P100 GPUs
+Schedule,Base - 12h | Big model - 3.5d
+Optimizer,"Adam optimizer with $β_1 = 0.9, β_2 = 0.98, e = 10^{−9} $"
+Regularization,Residual Dropout
