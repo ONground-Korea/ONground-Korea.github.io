@@ -72,11 +72,12 @@ output은 value들의 가중합으로 계산되며, 가중치는 query와 연관
 
 ### 3.2.1 Scaled Dot-Product Attention
 
-![Transformer%207121758706824ec9b26fcd4104566599/Untitled.png](Transformer%207121758706824ec9b26fcd4104566599/Untitled.png)
+![/assets/Transformer/Untitled.png](/assets/Transformer/Untitled.png)
 
 - Input - $d_k$차원의 query와 key, $d_v$차원의 value
 
-![Transformer%207121758706824ec9b26fcd4104566599/Untitled%201.png](Transformer%207121758706824ec9b26fcd4104566599/Untitled%201.png)
+![](/assets/Transformer/Untitled1.png)
+
 
 query와 모든 key의 dot-product를 계산하고, 각각 $\sqrt{d_k}$로 나누고(scaling), value의 가중치를 얻기 위해 softmax함수를 적용한다.
 
@@ -92,7 +93,7 @@ V: 인코더의 output state
 
 ### 3.2.2 Multi-Head Attention
 
-![Transformer%207121758706824ec9b26fcd4104566599/Untitled%202.png](Transformer%207121758706824ec9b26fcd4104566599/Untitled%202.png)
+![/assets/Transformer/Untitled%202.png](/assets/Transformer/Untitled2.png)
 
 $d_{model}$차원의 query, key, value로 단일 attention function을 사용하는 것보다 이들을 각각 $d_k, d_k, d_v$차원으로 각각 다르게 $h$번 학습시키는 것이 낫다. 
 
@@ -100,9 +101,9 @@ $d_{model}$차원의 query, key, value로 단일 attention function을 사용하
 
 각각 계산된 $h$쌍의 $d_v$차원의 출력을 concatenate한 후 선형함수에 통과시켜 최종 출력값을 계산한다.
 
-![Transformer%207121758706824ec9b26fcd4104566599/Untitled%203.png](Transformer%207121758706824ec9b26fcd4104566599/Untitled%203.png)
+![/assets/Transformer/Untitled%203.png](/assets/Transformer/Untitled3.png)
 
-![Transformer%207121758706824ec9b26fcd4104566599/Untitled%204.png](Transformer%207121758706824ec9b26fcd4104566599/Untitled%204.png)
+![/assets/Transformer/Untitled%204.png](/assets/Transformer/Untitled4.png)
 
 논문에서는 $h=8, d_k=d_v=d_{model}/h=64$를 사용하였다.
 
@@ -128,20 +129,20 @@ Transformer에서는 recurrence와 convolution을 사용하지 않기때문에 �
 
 모델에서는 sin, cos함수를 사용하였다.
 
-![Transformer%207121758706824ec9b26fcd4104566599/Untitled%205.png](Transformer%207121758706824ec9b26fcd4104566599/Untitled%205.png)
+![/assets/Transformer/Untitled%205.png](/assets/Transformer/Untitled5.png)
 
 - pos: position | i: dimension | 주기: $10000^{2i/d_{model}}2\pi$
 - pos - sequence에서 단어의 위치, 해당 단어는 $i : 0 -> d_{model}/2$
 
 # 5. Training
 
-[제목 없음](Transformer%207121758706824ec9b26fcd4104566599/%E1%84%8C%E1%85%A6%E1%84%86%E1%85%A9%E1%86%A8%20%E1%84%8B%E1%85%A5%E1%86%B9%E1%84%82%E1%85%B3%E1%86%AB%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%87%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3%200303f15617e0400896b5a81ce6273cc5.csv)
+[](/assets/Transformer/%E1%84%8C%E1%85%A6%E1%84%86%E1%85%A9%E1%86%A8%20%E1%84%8B%E1%85%A5%E1%86%B9%E1%84%82%E1%85%B3%E1%86%AB%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%E1%84%87%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%89%E1%85%B3%200303f15617e0400896b5a81ce6273cc5.csv)
 
 - Optimizer
 
 Adam optimizer에서 learning rate를 고정시키지 않고 변화시킴.
 
-![Transformer%207121758706824ec9b26fcd4104566599/Untitled%206.png](Transformer%207121758706824ec9b26fcd4104566599/Untitled%206.png)
+![/assets/Transformer/Untitled%206.png](/assets/Transformer/Untitled6.png)
 
 warmup_step까지는 선형적으로 증가하다가 이후에는 step_num의 inverse square root에 비례하도록 감소시킨다. 
 
@@ -149,11 +150,11 @@ warmup_step까지는 선형적으로 증가하다가 이후에는 step_num의 in
 
 # 6. Results
 
-![Transformer%207121758706824ec9b26fcd4104566599/Untitled%207.png](Transformer%207121758706824ec9b26fcd4104566599/Untitled%207.png)
+![/assets/Transformer/Untitled%207.png](/assets/Transformer/Untitled7.png)
 
-![Transformer%207121758706824ec9b26fcd4104566599/Untitled%208.png](Transformer%207121758706824ec9b26fcd4104566599/Untitled%208.png)
+![/assets/Transformer/Untitled%208.png](/assets/Transformer/Untitled8.png)
 
-![Transformer%207121758706824ec9b26fcd4104566599/Untitled%209.png](Transformer%207121758706824ec9b26fcd4104566599/Untitled%209.png)
+![/assets/Transformer/Untitled%209.png](/assets/Transformer/Untitled9.png)
 
 # 7. Conclusion
 
