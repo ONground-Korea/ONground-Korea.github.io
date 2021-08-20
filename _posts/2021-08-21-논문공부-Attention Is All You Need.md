@@ -3,7 +3,7 @@ layout: post
 author: 한지상
 title: "Paper study - Attention Is All You Need"
 date: 2021-08-21 02:58:00
-categories: Papers Study
+categories: Papers_Study
 tags: [논문, VQA, Vision]
 use_math: true
 ---
