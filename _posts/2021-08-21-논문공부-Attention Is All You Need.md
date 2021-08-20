@@ -5,13 +5,13 @@ title: "Paper study - Attention Is All You Need"
 date: 2021-08-21 02:58:00
 categories: Papers Study
 tags: [논문, VQA, Vision]
+use_math: true
 ---
 
 # Transformer
 
 Conference: Neurpis2017  
 Presenter: 한지상  
-Tags: 2주차  
 Title: Attention Is All You Need  
 URL: https://papers.nips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
   
