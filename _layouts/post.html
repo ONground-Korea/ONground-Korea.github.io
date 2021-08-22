@@ -12,15 +12,6 @@ layout: default
   </div>
 </div>
 
-<script src="https://utteranc.es/client.js"
-        repo="ONground-Korea/ONground-Korea.github.io"
-        issue-term="pathname"
-        label="comments"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-
 <div class="wrapper">
 
 {% unless page.cover %} {% include page_divider.html %} {% endunless %}
@@ -126,6 +117,15 @@ layout: default
 		</span>
 	</section>
 {% endif %}
+
+<script src="https://utteranc.es/client.js"
+        repo="ONground-Korea/ONground-Korea.github.io"
+        issue-term="pathname"
+        label="comments"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 
 {% if site.disqus_shortname %}
 {% unless page.disqus_disabled %}
