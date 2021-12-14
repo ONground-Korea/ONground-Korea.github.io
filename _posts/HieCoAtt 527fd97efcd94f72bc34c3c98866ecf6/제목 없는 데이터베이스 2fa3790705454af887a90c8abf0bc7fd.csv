@@ -1,0 +1,6 @@
+﻿이름,설명
+Datasets,"VQA dataset
+COCO-QA dataset"
+Setup,"batch : 300
+epoch : 256
+dropout : 0.5 each"
